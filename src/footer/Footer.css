@@ -1,0 +1,66 @@
+.footer-container {
+  width: 20%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icons {
+  font-size: 50px;
+  padding: 10px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-icons:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+}
+
+.icon-tooltip {
+  position: absolute;
+  top: -40px;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.icon-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px 5px 0 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.icon-wrapper:hover .icon-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-5px);
+}

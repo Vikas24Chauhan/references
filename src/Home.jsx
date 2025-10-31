@@ -1,7 +1,9 @@
 import React from "react";
-import TopDestinations from "./topDestinations/TopDestinations";
 import Navbar from "./navbar/Navbar";
+import TopDestinations from "./topDestinations/TopDestinations";
+import Footer from "./footer/Footer";
 
+// Navbar
 const menuItems = [
   { label: "Home", ariaLabel: "Go to home page", link: "/" },
   { label: "About", ariaLabel: "Learn about us", link: "/about" },
@@ -34,7 +36,8 @@ function Home() {
           onMenuClose={() => console.log("Menu closed")}
         />
       </div>
-      {/* <TopDestinations /> */}
+      <TopDestinations />
+      <Footer />
     </>
   );
 }
