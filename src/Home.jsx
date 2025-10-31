@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
 import TopDestinations from "./topDestinations/TopDestinations";
+import ScrollStack from "./scrollStack/ScrollStack";
 import Footer from "./footer/Footer";
 
 // Navbar
@@ -37,6 +38,7 @@ function Home() {
         />
       </div>
       <TopDestinations />
+      <ScrollStack />
       <Footer />
     </>
   );
