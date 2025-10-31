@@ -5,21 +5,21 @@ import { FiHome, FiSettings, FiBook, FiUser } from "react-icons/fi";
 function Footer() {
   return (
     <div className="footer-container">
-      <div className="icon-wrapper">
+      <div className="footer-icon-wrapper">
         <FiHome className="footer-icons" />
-        <span className="icon-tooltip">Home</span>
+        <span className="footer-icon-tooltip">Home</span>
       </div>
-      <div className="icon-wrapper">
+      <div className="footer-icon-wrapper">
         <FiBook className="footer-icons" />
-        <span className="icon-tooltip">Blog</span>
+        <span className="footer-icon-tooltip">Blog</span>
       </div>
-      <div className="icon-wrapper">
+      <div className="footer-icon-wrapper">
         <FiUser className="footer-icons" />
-        <span className="icon-tooltip">About</span>
+        <span className="footer-icon-tooltip">About</span>
       </div>
-      <div className="icon-wrapper">
+      <div className="footer-icon-wrapper">
         <FiSettings className="footer-icons" />
-        <span className="icon-tooltip">Settings</span>
+        <span className="footer-icon-tooltip">Settings</span>
       </div>
     </div>
   );

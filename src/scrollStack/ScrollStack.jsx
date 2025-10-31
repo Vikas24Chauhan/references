@@ -150,32 +150,32 @@ const ScrollStack = () => {
 
   return (
     <>
-      <div className="space space--small"></div>
-      <div className="cards" ref={cardsContainerRef}>
+      <div className="ss-space ss-space--small"></div>
+      <div className="ss-cards" ref={cardsContainerRef}>
         {cardData.map((card, index) => (
           <div
             key={card.id}
-            className="card"
+            className="ss-card"
             data-index={index}
             ref={(el) => addToCardsRef(el, index)}
           >
-            <div className="card__inner">
-              <div className="card__image-container">
+            <div className="ss-card__inner">
+              <div className="ss-card__image-container">
                 <img
-                  className="card__image"
+                  className="ss-card__image"
                   src={card.image}
                   alt={card.title}
                 />
               </div>
-              <div className="card__content">
-                <h1 className="card__title">{card.title}</h1>
-                <p className="card__description">{card.description}</p>
+              <div className="ss-card__content">
+                <h1 className="ss-card__title">{card.title}</h1>
+                <p className="ss-card__description">{card.description}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="space"></div>
+      <div className="ss-space"></div>
     </>
   );
 };

@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 
-.icon-wrapper {
+.footer-icon-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@
   background-color: #f0f0f0;
 }
 
-.icon-tooltip {
+.footer-icon-tooltip {
   position: absolute;
   top: -40px;
   background-color: #333;
@@ -48,7 +48,7 @@
   z-index: 100;
 }
 
-.icon-tooltip::after {
+.footer-icon-tooltip::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -59,7 +59,7 @@
   border-color: #333 transparent transparent transparent;
 }
 
-.icon-wrapper:hover .icon-tooltip {
+.footer-icon-wrapper:hover .footer-icon-tooltip {
   opacity: 1;
   visibility: visible;
   transform: translateY(-5px);

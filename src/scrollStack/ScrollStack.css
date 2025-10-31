@@ -1,9 +1,9 @@
-.card {
+.ss-card {
   position: sticky;
   top: 0;
 }
 
-.card__inner {
+.ss-card__inner {
   will-change: transform;
   background: white;
   border-radius: 14px;
@@ -13,32 +13,32 @@
   transform-origin: center top;
 }
 
-.cards {
+.ss-cards {
   width: 70%;
   margin: 0 auto;
   gap: 40px 0;
 }
 
-.card__image-container {
+.ss-card__image-container {
   display: flex;
   width: 40%;
   flex-shrink: 0;
 }
 
-.card__image {
+.ss-card__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   aspect-ratio: 1;
 }
 
-.card__content {
+.ss-card__content {
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
 }
 
-.card__title {
+.ss-card__title {
   padding: 0;
   margin: 0;
   font-size: 60px;
@@ -46,34 +46,34 @@
   color: #16263a;
 }
 
-.card__description {
+.ss-card__description {
   line-height: 1.4;
   font-size: 24px;
   color: #16263a;
 }
 
-.space {
+.ss-space {
   height: 20vh;
 }
 
-.space--small {
+.ss-space--small {
   height: 10vh;
 }
 
 @media (max-width: 1440px) {
-  .cards {
+  .ss-cards {
     width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .cards {
+  .ss-cards {
     width: 90%;
   }
 }
 
 @media (max-width: 480px) {
-  .cards {
+  .ss-cards {
     width: 95%;
   }
 }
