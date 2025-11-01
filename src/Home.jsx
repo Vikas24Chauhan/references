@@ -3,6 +3,7 @@ import Navbar from "./navbar/Navbar";
 import TopDestinations from "./topDestinations/TopDestinations";
 import ScrollStack from "./scrollStack/ScrollStack";
 import CardToCode from "./cardToCode/CardToCode";
+import CircularGallery from "./circularGallery/CircularGallery";
 import Footer from "./footer/Footer";
 
 // Navbar
@@ -41,6 +42,14 @@ function Home() {
       <TopDestinations />
       <ScrollStack />
       <CardToCode />
+      <div style={{ height: "600px", position: "relative" }}>
+        <CircularGallery
+          bend={3}
+          textColor="#ffffff"
+          borderRadius={0.05}
+          scrollEase={0.02}
+        />
+      </div>
       <Footer />
     </>
   );
