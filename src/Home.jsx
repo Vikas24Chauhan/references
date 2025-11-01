@@ -4,6 +4,7 @@ import TopDestinations from "./topDestinations/TopDestinations";
 import ScrollStack from "./scrollStack/ScrollStack";
 import CardToCode from "./cardToCode/CardToCode";
 import CircularGallery from "./circularGallery/CircularGallery";
+import DomeGallery from "./domeGallery/DomeGallery";
 import Footer from "./footer/Footer";
 
 // Navbar
@@ -50,6 +51,11 @@ function Home() {
           scrollEase={0.02}
         />
       </div>
+
+      <div style={{ width: "100%", height: "100vh" }}>
+        <DomeGallery />
+      </div>
+
       <Footer />
     </>
   );
