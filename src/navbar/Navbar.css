@@ -28,6 +28,7 @@
   background: transparent;
   pointer-events: none;
   z-index: 20;
+  position: fixed;
 }
 
 .staggered-menu-header > * {
@@ -59,6 +60,8 @@
   font-weight: 500;
   line-height: 1;
   overflow: visible;
+  padding: 4px;
+  border-radius: 8px;
 }
 
 .sm-toggle:focus-visible {
@@ -141,6 +144,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 10;
+  position: fixed;
 }
 
 [data-position="left"] .staggered-menu-panel {
