@@ -151,17 +151,17 @@ const DraggableImageSlider = () => {
   }, []);
 
   return (
-    <div className="slider-container">
+    <div className="dis-slider-container">
       <h1>Draggable Image Slider</h1>
 
-      <div className="demo" ref={containerRef}>
+      <div className="dis-demo" ref={containerRef}>
         {images.map((src, index) => (
           <div
             key={index}
-            className="card"
+            className="dis-card"
             ref={(el) => (cardsRef.current[index] = el)}
           >
-            <img src={src} alt={`Slide ${index + 1}`} />
+            <img src={src} alt={`dis-Slide ${index + 1}`} />
           </div>
         ))}
       </div>
