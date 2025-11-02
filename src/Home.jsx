@@ -5,6 +5,8 @@ import ScrollStack from "./scrollStack/ScrollStack";
 import CardToCode from "./cardToCode/CardToCode";
 import CircularGallery from "./circularGallery/CircularGallery";
 import DomeGallery from "./domeGallery/DomeGallery";
+import ScrollToBloom from "./scrollToBloom/ScrollToBloom";
+// import CardSlidePanels from "./cardSlidePanels/CardSlidePanels";
 import Footer from "./footer/Footer";
 
 // Navbar
@@ -40,9 +42,13 @@ function Home() {
           onMenuClose={() => console.log("Menu closed")}
         />
       </div>
+
       <TopDestinations />
+
       <ScrollStack />
+
       <CardToCode />
+
       <div style={{ height: "600px", position: "relative" }}>
         <CircularGallery
           bend={3}
@@ -55,6 +61,10 @@ function Home() {
       <div style={{ width: "100%", height: "100vh" }}>
         <DomeGallery />
       </div>
+
+      <ScrollToBloom />
+
+      {/* <CardSlidePanels /> */}
 
       <Footer />
     </>
