@@ -7,6 +7,7 @@ import CircularGallery from "./circularGallery/CircularGallery";
 import DomeGallery from "./domeGallery/DomeGallery";
 import ScrollToBloom from "./scrollToBloom/ScrollToBloom";
 import AccordionSlider from "./accordionSlider/AccordionSlider";
+import DraggableImageSlider from "./draggableImageSlider/DraggableImageSlider";
 import Footer from "./footer/Footer";
 
 // Navbar
@@ -56,6 +57,8 @@ function Home() {
       <ScrollToBloom />
 
       <AccordionSlider />
+
+      <DraggableImageSlider />
 
       <Footer />
     </>
