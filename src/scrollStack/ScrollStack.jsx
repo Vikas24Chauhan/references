@@ -149,8 +149,9 @@ const ScrollStack = () => {
   ];
 
   return (
-    <>
-      <div className="ss-space ss-space--small"></div>
+    <div className="ss-container">
+      <h1>Scroll Stack</h1>
+
       <div className="ss-cards" ref={cardsContainerRef}>
         {cardData.map((card, index) => (
           <div
@@ -175,8 +176,9 @@ const ScrollStack = () => {
           </div>
         ))}
       </div>
-      <div className="ss-space"></div>
-    </>
+
+      <div className="ss-space-bottom" />
+    </div>
   );
 };
 

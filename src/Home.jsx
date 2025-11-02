@@ -6,7 +6,7 @@ import CardToCode from "./cardToCode/CardToCode";
 import CircularGallery from "./circularGallery/CircularGallery";
 import DomeGallery from "./domeGallery/DomeGallery";
 import ScrollToBloom from "./scrollToBloom/ScrollToBloom";
-// import CardSlidePanels from "./cardSlidePanels/CardSlidePanels";
+import AccordionSlider from "./accordionSlider/AccordionSlider";
 import Footer from "./footer/Footer";
 
 // Navbar
@@ -49,22 +49,13 @@ function Home() {
 
       <CardToCode />
 
-      <div style={{ height: "600px", position: "relative" }}>
-        <CircularGallery
-          bend={3}
-          textColor="#ffffff"
-          borderRadius={0.05}
-          scrollEase={0.02}
-        />
-      </div>
+      <CircularGallery />
 
-      <div style={{ width: "100%", height: "100vh" }}>
-        <DomeGallery />
-      </div>
+      <DomeGallery />
 
       <ScrollToBloom />
 
-      {/* <CardSlidePanels /> */}
+      <AccordionSlider />
 
       <Footer />
     </>

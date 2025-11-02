@@ -1,3 +1,12 @@
+.ss-container {
+  width: 100%;
+}
+
+.ss-container h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
 .ss-card {
   position: sticky;
   top: 0;
@@ -11,6 +20,7 @@
   overflow: hidden;
   box-shadow: 0 25px 50px -12px hsla(265.3, 20%, 10%, 35%);
   transform-origin: center top;
+  margin-top: 2.5rem;
 }
 
 .ss-cards {
@@ -52,12 +62,8 @@
   color: #16263a;
 }
 
-.ss-space {
-  height: 20vh;
-}
-
-.ss-space--small {
-  height: 10vh;
+.ss-space-bottom {
+  height: 8rem;
 }
 
 @media (max-width: 1440px) {

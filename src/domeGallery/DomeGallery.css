@@ -1,7 +1,7 @@
 .dg-sphere-root {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   --radius: 520px;
   --viewer-pad: 72px;
   --circ: calc(var(--radius) * 3.14);
@@ -10,6 +10,12 @@
   --item-width: calc(var(--circ) / var(--segments-x));
   --item-height: calc(var(--circ) / var(--segments-y));
   background: #424242;
+}
+
+.dg-sphere-root h1 {
+  text-align: center;
+  color: white;
+  padding: 2rem 1rem;
 }
 
 .dg-sphere,

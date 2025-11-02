@@ -1114,7 +1114,8 @@ const CardToCode = () => {
 
   return (
     <div className="card-to-code-container">
-      <div className="container">
+      <h1>Card to Code</h1>
+      <div className="card-to-code-main">
         <canvas id="particleCanvas" ref={particleCanvasRef}></canvas>
         <canvas id="scannerCanvas" ref={scannerCanvasRef}></canvas>
 

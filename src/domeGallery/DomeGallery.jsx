@@ -665,6 +665,8 @@ export default function DomeGallery({
         ["--image-filter"]: grayscale ? "grayscale(1)" : "none",
       }}
     >
+      <h1>Dome Gallery</h1>
+
       <main ref={mainRef} className="dg-sphere-main">
         <div className="dg-stage">
           <div ref={sphereRef} className="dg-sphere">

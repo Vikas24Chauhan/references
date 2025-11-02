@@ -562,5 +562,9 @@ export default function CircularGallery({
       app.destroy();
     };
   }, [items, bend, textColor, borderRadius, font, scrollSpeed, scrollEase]);
-  return <div className="circular-gallery" ref={containerRef} />;
+  return (
+    <div className="circular-gallery" ref={containerRef}>
+      <h1>Circular Gallery</h1>
+    </div>
+  );
 }
