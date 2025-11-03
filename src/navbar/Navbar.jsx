@@ -5,8 +5,6 @@ import "./Navbar.css";
 export const Navbar = ({
   position = "right",
   colors = ["#B19EEF", "#5227FF"],
-  items = [],
-  socialItems = [],
   displaySocials = true,
   displayItemNumbering = true,
   className,
@@ -38,6 +36,19 @@ export const Navbar = ({
   const toggleBtnRef = useRef(null);
   const busyRef = useRef(false);
   const itemEntranceTweenRef = useRef(null);
+
+  const menuItems = [
+    { label: "Home", ariaLabel: "Go to home page", link: "/" },
+    { label: "About", ariaLabel: "Learn about us", link: "/about" },
+    { label: "Services", ariaLabel: "View our services", link: "/services" },
+    { label: "Contact", ariaLabel: "Get in touch", link: "/contact" },
+  ];
+
+  const socialItems = [
+    { label: "Twitter", link: "https://twitter.com" },
+    { label: "GitHub", link: "https://github.com" },
+    { label: "LinkedIn", link: "https://linkedin.com" },
+  ];
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -432,8 +443,8 @@ export const Navbar = ({
             role="list"
             data-numbering={displayItemNumbering || undefined}
           >
-            {items && items.length ? (
-              items.map((it, idx) => (
+            {menuItems && menuItems.length ? (
+              menuItems.map((it, idx) => (
                 <li className="sm-panel-itemWrap" key={it.label + idx}>
                   <a
                     className="sm-panel-item"
