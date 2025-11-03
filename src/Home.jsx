@@ -9,6 +9,7 @@ import ScrollToBloom from "./scrollToBloom/ScrollToBloom";
 import AccordionSlider from "./accordionSlider/AccordionSlider";
 import DraggableImageSlider from "./draggableImageSlider/DraggableImageSlider";
 import ProjectsCarousel from "./projectsCarousel/ProjectsCarousel";
+import FlowingMenu from "./flowingMenu/FlowingMenu";
 import Footer from "./footer/Footer";
 
 // Navbar
@@ -28,22 +29,20 @@ const socialItems = [
 function Home() {
   return (
     <>
-      <div style={{ height: "100vh", background: "#1a1a1a" }}>
-        <Navbar
-          position="right"
-          items={menuItems}
-          socialItems={socialItems}
-          displaySocials={true}
-          displayItemNumbering={true}
-          menuButtonColor="#fff"
-          openMenuButtonColor="#fff"
-          changeMenuColorOnOpen={true}
-          colors={["#B19EEF", "#5227FF"]}
-          logoUrl="/path-to-your-logo.svg"
-          onMenuOpen={() => console.log("Menu opened")}
-          onMenuClose={() => console.log("Menu closed")}
-        />
-      </div>
+      <Navbar
+        position="right"
+        items={menuItems}
+        socialItems={socialItems}
+        displaySocials={true}
+        displayItemNumbering={true}
+        menuButtonColor="#fff"
+        openMenuButtonColor="#fff"
+        changeMenuColorOnOpen={true}
+        colors={["#B19EEF", "#5227FF"]}
+        logoUrl="/path-to-your-logo.svg"
+        onMenuOpen={() => console.log("Menu opened")}
+        onMenuClose={() => console.log("Menu closed")}
+      />
 
       <TopDestinations />
 
@@ -62,6 +61,8 @@ function Home() {
       <DraggableImageSlider />
 
       <ProjectsCarousel />
+
+      <FlowingMenu />
 
       <Footer />
     </>
