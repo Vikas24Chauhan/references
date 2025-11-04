@@ -10,6 +10,7 @@ import AccordionSlider from "./accordionSlider/AccordionSlider";
 import DraggableImageSlider from "./draggableImageSlider/DraggableImageSlider";
 import ProjectsCarousel from "./projectsCarousel/ProjectsCarousel";
 import FlowingMenu from "./flowingMenu/FlowingMenu";
+import ScrollRevealSections from "./scrollRevealSections/ScrollRevealSections";
 import Footer from "./footer/Footer";
 
 function Home() {
@@ -47,6 +48,8 @@ function Home() {
       <ProjectsCarousel />
 
       <FlowingMenu />
+
+      <ScrollRevealSections />
 
       <Footer />
     </>
