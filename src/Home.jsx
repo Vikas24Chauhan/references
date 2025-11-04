@@ -11,6 +11,7 @@ import DraggableImageSlider from "./draggableImageSlider/DraggableImageSlider";
 import ProjectsCarousel from "./projectsCarousel/ProjectsCarousel";
 import FlowingMenu from "./flowingMenu/FlowingMenu";
 import ScrollRevealSections from "./scrollRevealSections/ScrollRevealSections";
+import ZoomEffectOnScroll from "./zoomEffectOnScroll/ZoomEffectOnScroll";
 import Footer from "./footer/Footer";
 
 function Home() {
@@ -50,6 +51,8 @@ function Home() {
       <FlowingMenu />
 
       <ScrollRevealSections />
+
+      <ZoomEffectOnScroll />
 
       <Footer />
     </>
