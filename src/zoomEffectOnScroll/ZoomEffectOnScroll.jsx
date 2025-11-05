@@ -52,7 +52,7 @@ const ZoomEffectOnScroll = () => {
       const layer1Items = container.querySelectorAll(
         '.zoom-item[data-layer="1"]'
       );
-      const heading = container.querySelector(".heading");
+      const heading = container.querySelector(".zoom-heading");
 
       layer3Items.forEach((item) => {
         const z = -2000 + 2800 * zoomProgress;
@@ -90,8 +90,8 @@ const ZoomEffectOnScroll = () => {
       }
 
       // Text reveal animation
-      const textSection = document.querySelector(".section-stick");
-      const textEl = document.querySelector(".opacity-reveal");
+      const textSection = document.querySelector(".zoom-section-stick");
+      const textEl = document.querySelector(".zoom-opacity-reveal");
 
       if (textSection && textEl) {
         // Show text section when zoom is complete
@@ -160,7 +160,7 @@ const ZoomEffectOnScroll = () => {
   return (
     <main className="zoom-main" ref={mainRef}>
       <div className="zoom-container" ref={scrollContainerRef}>
-        <h1 className="heading">
+        <h1 className="zoom-heading">
           Perspective Zoom Effect
           <br />
           on Scroll
@@ -238,8 +238,8 @@ const ZoomEffectOnScroll = () => {
           />
         </div>
       </div>
-      <section className="section-stick">
-        <p className="opacity-reveal">
+      <section className="zoom-section-stick">
+        <p className="zoom-opacity-reveal">
           If you're lucky, a Golden Retriever will come into your life, steal
           your heart, and change everything.
         </p>
