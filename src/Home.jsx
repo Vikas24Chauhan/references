@@ -13,6 +13,7 @@ import FlowingMenu from "./flowingMenu/FlowingMenu";
 import ScrollRevealSections from "./scrollRevealSections/ScrollRevealSections";
 import Error404 from "./error404/Error404";
 import Footer from "./footer/Footer";
+import Button from "./button/Button";
 
 function Home() {
   return (
@@ -53,6 +54,8 @@ function Home() {
       <ScrollRevealSections />
 
       <Error404 />
+
+      <Button />
 
       <Footer />
     </>

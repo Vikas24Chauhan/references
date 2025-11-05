@@ -1,0 +1,37 @@
+.button-demo {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.button-demo-container {
+  align-items: center;
+  background: linear-gradient(180deg, #f9fafb, #fff);
+  border: 1px solid rgba(33, 33, 33, 0.07);
+  border-radius: 22px;
+  box-shadow: inset 0 0.361px 0.181px -1.25px rgba(0, 0, 0, 0.18),
+    inset 0 1.373px 0.687px -2.5px rgba(0, 0, 0, 0.16),
+    inset 0 6px 3px -3.75px rgba(0, 0, 0, 0.06),
+    inset 0 0.422px 0.422px -1.25px hsla(0, 0%, 100%, 0.18),
+    inset 0 1.602px 1.602px -2.5px hsla(0, 0%, 100%, 0.16),
+    inset 0 7px 7px -3.75px hsla(0, 0%, 100%, 0.06),
+    0 0.652px 0.652px -0.2px rgba(0, 0, 0, 0.02),
+    0 1.776px 1.776px -0.4px rgba(0, 0, 0, 0.02),
+    0 3.899px 3.899px -0.6px rgba(0, 0, 0, 0.03),
+    0 8.655px 8.655px -0.8px rgba(0, 0, 0, 0.04),
+    0 22px 22px -1px rgba(0, 0, 0, 0.08);
+  display: inline-flex;
+  gap: 10px;
+  height: 40px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px;
+  width: fit-content;
+}
+
+.button-demo-container button {
+  border: none;
+  background: none;
+  font-size: 2rem;
+}

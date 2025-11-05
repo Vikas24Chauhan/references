@@ -1,5 +1,6 @@
 import React, { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import LogoImage from "../assets/react.svg";
 import "./Navbar.css";
 
 export const Navbar = ({
@@ -394,7 +395,7 @@ export const Navbar = ({
       >
         <div className="sm-logo" aria-label="Logo">
           <img
-            src={logoUrl || "/src/assets/logos/reactbits-gh-white.svg"}
+            src={LogoImage}
             alt="Logo"
             className="sm-logo-img"
             draggable={false}
