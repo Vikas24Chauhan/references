@@ -1,0 +1,204 @@
+/* ====== MAIN WRAPPER ====== */
+.error-div {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/error-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ====== STAR LAYERS ====== */
+.error-div::before,
+.error-div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ⭐ Small fast stars */
+.error-div::before {
+  background-image: radial-gradient(2px 2px at 10% 20%, #fff, transparent),
+    radial-gradient(2px 2px at 80% 90%, #fff, transparent),
+    radial-gradient(2px 2px at 50% 60%, #fff, transparent),
+    radial-gradient(2px 2px at 70% 30%, #fff, transparent),
+    radial-gradient(2px 2px at 20% 80%, #fff, transparent),
+    radial-gradient(2px 2px at 40% 10%, #fff, transparent),
+    radial-gradient(2px 2px at 90% 40%, #fff, transparent),
+    radial-gradient(2px 2px at 30% 50%, #fff, transparent),
+    radial-gradient(2px 2px at 60% 20%, #fff, transparent),
+    radial-gradient(2px 2px at 15% 60%, #fff, transparent),
+    radial-gradient(2px 2px at 25% 75%, #fff, transparent),
+    radial-gradient(2px 2px at 75% 15%, #fff, transparent),
+    radial-gradient(2px 2px at 45% 25%, #fff, transparent),
+    radial-gradient(2px 2px at 85% 55%, #fff, transparent),
+    radial-gradient(2px 2px at 10% 90%, #fff, transparent);
+  animation: starsMove1 12s linear infinite;
+  opacity: 0.7;
+}
+
+/* ⭐ Bigger slow stars */
+.error-div::after {
+  background-image: radial-gradient(3px 3px at 25% 10%, white, transparent),
+    radial-gradient(3px 3px at 65% 85%, white, transparent),
+    radial-gradient(3px 3px at 10% 55%, white, transparent),
+    radial-gradient(3px 3px at 50% 15%, white, transparent),
+    radial-gradient(3px 3px at 90% 70%, white, transparent),
+    radial-gradient(3px 3px at 35% 80%, white, transparent),
+    radial-gradient(3px 3px at 75% 50%, white, transparent),
+    radial-gradient(3px 3px at 55% 90%, white, transparent),
+    radial-gradient(3px 3px at 5% 25%, white, transparent),
+    radial-gradient(3px 3px at 95% 35%, white, transparent),
+    radial-gradient(3px 3px at 60% 40%, white, transparent),
+    radial-gradient(3px 3px at 70% 10%, white, transparent),
+    radial-gradient(3px 3px at 15% 30%, white, transparent),
+    radial-gradient(3px 3px at 85% 80%, white, transparent),
+    radial-gradient(3px 3px at 35% 55%, white, transparent);
+  animation: starsMove2 18s linear infinite;
+  opacity: 0.4;
+}
+
+@keyframes starsMove1 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes starsMove2 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-300px);
+  }
+}
+
+/* ====== CONTENT SECTION ====== */
+.error-content {
+  width: 40%;
+  height: auto;
+  z-index: 2;
+}
+
+.error-content h1 {
+  font-size: 8rem;
+  color: white;
+  line-height: 8rem;
+}
+
+.error-content h2 {
+  font-size: 3rem;
+  color: white;
+  line-height: 3rem;
+}
+
+.error-content p {
+  font-size: 18px;
+  color: white;
+  line-height: 4rem;
+}
+
+/* ====== FLOATING IMAGE ====== */
+.error-img {
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  animation: floatDiagonal 4s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes floatDiagonal {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-20px, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* ====== BUTTON ====== */
+.back-btn {
+  display: inline-block;
+  padding: 12px 0;
+  max-width: 300px;
+  width: 95%;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, rgb(230, 0, 255), rgb(132, 0, 255));
+  box-shadow: rgb(31, 38, 52) 0 0 60px;
+  transition: all ease-in-out 0.5s;
+  z-index: 2;
+}
+
+.back-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1024px) {
+  .error-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .error-div {
+    flex-direction: column-reverse;
+    padding: 5rem 0;
+  }
+
+  .error-content {
+    width: 80%;
+    text-align: center;
+  }
+
+  .error-content h1 {
+    font-size: 6rem;
+  }
+
+  .error-content h2 {
+    font-size: 2rem;
+  }
+
+  .error-content p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .error-img {
+    width: 60%;
+    animation: floatDiagonalMobile 4s ease-in-out infinite;
+  }
+}
+
+@keyframes floatDiagonalMobile {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
